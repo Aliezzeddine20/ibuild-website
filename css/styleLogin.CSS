@@ -1,0 +1,182 @@
+/* start global variables */
+
+:root {
+    --primary-color: #f13a11;
+    --white-color: #ffffff;
+    --dark-color: #171819;
+    --about-bg-color: #f9f9f9;
+    --gray-color: #909090;
+    --link-color: #404040;
+    --p-color: #666262;
+    --base-font-family: 'Plain', sans-serif;
+    --font-weight-bold: bold;
+    --font-weight-normal: normal;
+    --font-weight-light: 300;
+    --font-weight-thin: 100;
+    --h1-font-size: 48px;
+    --h2-font-size: 36px;
+    --h3-font-size: 28px;
+    --h4-font-size: 24px;
+    --h5-font-size: 22px;
+    --h6-font-size: 22px;
+    --p-font-size: 18px;
+    --base-font-size: 16px;
+    --menu-font-size: 14px;
+    --border-radius-large: 100%;
+    --border-radius-small: 2px;
+}
+
+
+/*end global variables  */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap%27%27');
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.contener {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.contener .content {
+    text-align: center;
+   
+}
+
+.contener .content h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+.contener .content h3 span {
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.contener .content h1 {
+    font: size 50px;
+    color: #333;
+}
+
+.contener .content h1 span {
+    color: crimson;
+}
+
+.contener .content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contener .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+
+.contener .content .btn:hover {
+    background: crimson;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: var(--dark-color);
+}
+
+.form-container form input:focus::placeholder {
+    color: transparent;
+}
+
+.form-container form {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 500px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.x {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-container form input,
+.form-container form select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.form-container form select option {
+    background: #fff;
+}
+
+.form-container form .form-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.form-container form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    font-size: var(--p-font-size);
+    color: var(--dark-color);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h4 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+}

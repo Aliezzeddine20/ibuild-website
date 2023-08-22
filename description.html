@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+    <link rel="stylesheet" href="../real project - Copy/css/description.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://kit.fontawesome.com/002372090b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50" onload="handel_page()">
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">iBuild</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#class" class="nav-link smoothScroll">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                    <div class="dropdown">
+                        <li><i class="fa-regular fa-circle-user dropbtn"></i></li>
+                        <div class="dropdown-content" id="ddb"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <section>
+        <h1>Specs</h1>
+        <div class="main">
+            <div class="column-flex">
+            <img class="imge" src="images/akazaMid.jpg" alt="pre-built image">
+            <form action="php/api/prebuild.php" method="post">
+                <label class="l-width" for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label class="l-width" for="price">id</label>
+                <input type="text" id="price" name="price">
+                <button class="d-block f-button" onclick="add_cart()">buy now</button>
+            </form>
+            </div>
+            <div class="about-text">
+                <p> Akaza Mid Range PC Build I7 12700K / B660 ProArt Creator / kingston Fury 32 GB 4*8GB 3733 / Samsung 500GB 970 Evo/Gigabyte RTX 3050 Gaming OC</p>
+                <span>46.000 EGP</span>
+                <div class="spics">
+                    <div class="item">Processor</div>
+                    <div class="type">intel i7 12700k</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Motherboard</div>
+                    <div class="type">B660 Pro Art Creator</div>
+                </div>
+                <div class="spics">
+                    <div class="item">RAM</div>
+                    <div class="type">kingston FURY 32 GB 4*8GB 3733</div>
+                </div>
+                <div class="spics">
+                    <div class="item">SSD</div>
+                    <div class="type">Samsung 500GB 970 EVO</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Graphics card</div>
+                    <div class="type">Gigabyte RTX 3050 Gaming OC</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Cooler</div>
+                    <div class="type">Antec Symphony Liquid Cooler 240</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Power supply</div>
+                    <div class="type">Antec 750W Neo platinum</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Case</div>
+                    <div class="type">Case Asus TUF GT301</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Seller</div>
+                    <div class="type">El yamama store</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Location</div>
+                    <div class="type">Al Boustan Shopping Center</div>
+                </div>
+                <div class="spics">
+                    <div class="item">Phone</div>
+                    <div class="type">0100 250 2174</div>
+                </div>
+                <table class="chart">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div><img src="images/Gaming_128.png"></div>
+                                <div class="discrip">Gaming 93%</div>
+                            </td>
+                            <td>
+                                <div><img src="images/Desktop_128.png"></div>
+                                <div class="discrip">Desktop 95%</div>
+                            </td>
+                            <td>
+                                <div><img class="h5a" src="images/Workstation_128.png"></div>
+                                <div class="discrip">Workstation 77%</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script>
+        function add_cart() {
+          alert("thank you for ordering, we will contact you soon");
+      
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/dashbord.css">
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Welcome to the Admin Dashboard, <?php echo $_SESSION['username']; ?></h1>
+	<nav>
+		<ul>
+			<li><a href="user mangment.html">User Management</a></li>
+			<li><a href="#">Content Management</a></li>
+			<li><a href="#">Analytics</a></li>
+		</ul>
+	</nav>
+	<div class="dashboard">
+		<div class="card">
+			<h2>Total Users</h2>
+			<p>1000</p>
+		</div>
+		<div class="card">
+			<h2>Total Posts</h2>
+			<p>5000</p>
+		</div>
+		<div class="card">
+			<h2>Site Traffic</h2>
+			<p>10000</p>
+		</div>
+	</div>
+</body>
+</html>

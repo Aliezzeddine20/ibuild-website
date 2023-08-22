@@ -1,0 +1,279 @@
+/* start variables */
+
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+}
+
+
+/* end variables */
+
+
+/*start Global rules  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+body {
+    background-color: #f1f5f9;
+    min-width: 1000px;
+}
+
+.head {
+    background-color: #555579;
+    min-width: 1500px;
+}
+
+
+/* end global rules  */
+
+
+/* start aside */
+
+.content {
+    min-width: 1500px;
+}
+
+.aside {
+    flex-basis: 15%;
+    min-width: 175px;
+}
+
+.aside .part-list {
+    background-color: #f9f5e9;
+    border: 1px solid black;
+}
+
+.aside .comp::before,
+.aside .comp::after {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: black;
+    top: calc(50% - 0.5px);
+}
+
+.aside .comp::before {
+    left: -10px;
+}
+
+.aside .comp::after {
+    right: -10px;
+}
+
+.aside label {
+    cursor: pointer;
+}
+
+.aside i:not(:first-child):hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.aside h2 {
+    border-bottom: 1px solid black;
+}
+
+.aside #vol {
+    width: 100%;
+}
+
+.aside .vol {
+    width: 100%;
+    height: 2px;
+}
+
+.aside .vol::before,
+.aside .vol::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--blue-alt-color);
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.aside .vol::before {
+    left: 0;
+}
+
+.aside .vol::after {
+    right: 0;
+}
+
+
+/* end aside */
+
+
+/* start products */
+
+.products {
+    flex-basis: 85%;
+}
+
+.products .heading {
+    border-bottom: 2px solid black;
+}
+
+.heading .search::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f002";
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    color: var(--grey-color);
+    font-size: 14px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.heading .search input {
+    margin-left: 5px;
+    padding-left: 30px;
+    width: 160px;
+    border: 1px solid #ccc;
+    transition: width;
+    -webkit-transition: width var(--main-transition);
+    -moz-transition: width;
+    -ms-transition: width;
+    -o-transition: width;
+}
+
+.heading .search input:focus {
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.heading .search input:focus::placeholder {
+    color: transparent;
+}
+
+.heading-2 ul a {
+    color: var(--grey-color);
+    color: var(--grey-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.heading-2 ul a:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.heading-2 span a:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    min-width: 1000px;
+    border-spacing: 0;
+}
+
+tr {
+    position: relative;
+}
+
+tr::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ddd;
+}
+
+table tr td {
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+thead td {
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+tbody td {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+table tbody tr td:last-child {
+    border-right: 1px solid #ccc;
+}
+
+table tbody tr:hover td {
+    background-color: #aba7a7;
+}
+
+table img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    padding: 2px;
+    background-color: white;
+}
+
+table .lable {
+    font-size: 13px;
+}

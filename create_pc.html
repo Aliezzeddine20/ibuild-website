@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/frame-work.css">
+    <link rel="stylesheet" href="css/noramlize.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="https://kit.fontawesome.com/002372090b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/create_pc.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+    <!-- font awsome library  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- frame work -->
+    <title>parts</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <script src="js/create_pc.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        .logo{
+          width: 230px;
+          cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="container" data-spy="scroll" data-target="#navbarNav" data-offset="50" onload="handel_page()">
+    
+    <div class="content">
+    <header class="banner">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="home.html">iBuild</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nv">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link smoothScroll">Home</a>
+                        </li>
+
+                      
+            </div>
+        </div>
+    </nav>
+    </header>
+                <ul class="d-flex">
+                    <li ></li>
+                    <li ></i></li>
+                    <li ></i></li>
+                    <li ></i></li>
+                    <li ></li>
+                    <li ></li>
+                    <li >
+                        <i ></i> 
+                    </li>
+                </ul>
+            </div>
+            <div class="box-2 between-flex " id="comp">
+                <div class="d-flex align-center ">
+                    <div class="info d-flex align-center p-10">
+                        <i class="fa-solid fa-circle-check pr-10"></i>
+                        <h3 class="m-0 c-black">Compatibility:</h3>
+                        <p class="fs-10 ml-10 p"> no issues or incompatibilities found.</p>
+                    </div>
+                </div>
+                <div class="d-flex blue align-center p-10">
+                    <i class="fa-solid fa-bolt fa-fw c-white  "></i>
+                    <div class="d-flex c-white">estimated wattage: <span id="watt"></span></div>
+                </div>
+            </div>
+            <table class="p-20">
+                <thead>
+                    <tr>
+                        <td>component</td>
+                        <td>selection</td>
+                        <td>base</td>
+                        <td>promo</td>
+                        <td>shipping</td>
+                        <td>tax</td>
+                        <td>price</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CPU</td>
+                        <td>
+                            <a class="btn-shape choose" href="cpu.html">
+                                <i class="fa-solid fa-plus "></i> choose
+                            </a>
+                        </td>
+                        <td id="cname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="cprice"></td>
+                        <td><button id="CPUuntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="c">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>CPU coller</td>
+                        <td>
+                            <a class="btn-shape choose" href="cpu_coller.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="ccname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="ccprice"></td>
+                        <td><button id="cooleruntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="cc">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>motherboard</td>
+                        <td>
+                            <a class="btn-shape choose" href="motherboard.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="mbname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="mbprice"></td>
+                        <td><button id="motherboard2" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="mb">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>memmory</td>
+                        <td>
+                            <a class="btn-shape choose" href="memmory.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="mname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="mprice"></td>
+                        <td><button id="ramuntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="m">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>stoarge</td>
+                        <td>
+                            <a class="btn-shape choose" href="storage.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="maname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="maprice"></td>
+                        <td><button id="SSDuntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="ma">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>video card</td>
+                        <td>
+                            <a class="btn-shape choose" href="video card.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="vname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="vprice"></td>
+                        <td><button id="GPUuntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="v">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>case</td>
+                        <td>
+                            <a class="btn-shape choose" href="case.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="aname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="aprice"></td>
+                        <td><button id="CASEuntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="a">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>power supply</td>
+                        <td>
+                            <a class="btn-shape choose" href="power_supply.html">
+                                <i class="fa-solid fa-plus"></i> choose
+                            </a>
+                        </td>
+                        <td id="pname"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="pprice"></td>
+                        <td><button id="PSUuntitled" class="popup-link" onclick="three(this.id)">show</button></td>
+                        <td><button class="btn-shape rm border" onclick="remove(this.id)" id="p">remove</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="cartB add-cart cart btn-shape border c-black popup-link fs-13" ><a class="c-black" href="cart.html">cart</a></button></td>
+                        <td><button class="cartB add-cart btn-shape fs-13 border "  id="cart" onclick="add_cart()" class="popup-link">add to cart</button></td>
+                        <td><button class="rm-all btn-shape fs-13 border" onclick="removeall()">remove all</button></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="closed"></div>
+    <div class="popup-wrapper" id="popup">
+    <div class="popup-container">
+    
+    <iframe class="txt-c" allowfullscreen="true" height="440" src="login_page.html" width="500" id="frame" scrolling="no"></iframe>
+    
+    <a class="popup-close" href="#closed" id="close">X</a>
+    </div>
+    </div>
+
+    <div class="popup-wrapper" id="popup2">
+        <div class="popup2-container">
+            <div><model-viewer id="view" auto-rotate camera-controls ar></model-viewer></div>
+            <a class="popup2-close" href="" id="close">X</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+</body>
